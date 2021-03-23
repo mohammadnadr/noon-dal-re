@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>noondalre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="node_modules/@laylazi/bootstrap-rtl-scss/dist/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/jquery-migrate/dist/jquery-migrate.js"></script>
+    <script src="node_modules/@laylazi/bootstrap-rtl/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="images/logo.png" class="logo">
+        <div class="collapse navbar-collapse" id=menu>
+            <ul class="navbar-nav ml-auto mr-lg-5 mr-0">
+                <li class="nav-item"><a href="#" class="nav-link">بازارچه</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">دست ساز</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">برای هدیه</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">هنرمندان</a></li>
+            </ul>
+
+        </div>
+        <a href="#" class="custom-link">
+                  <span class="icon ml-1">
+                      <svg width="1em"
+                           height="1em"
+                           viewBox="0 0 16 16"
+                           class="bi bi-basket-fill"
+                           fill="currentColor"
+                           xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
+</svg>
+                      <span class="d-inline-block d-md-none badge badge-info">2</span>
+                  </span>
+            <span class="ml-1 d-none d-md-inline">سفارشات</span>
+            <span class="number d-none d-md-inline">2</span><span class="d-none d-md-inline"> تا</span>
+        </a>
+    </div>
+</nav>
+<div class="product" id="product">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 text-center">
+                <div class="product-image">
+                    <div class="slider" id="slik">
+                        <img src="images/sample_product_2.png">
+                        <img src="images/sample_product_2.png">
+                        <img src="images/sample_product_2.png">
+                    </div>
+                    <div class="slider-controller">
+                        <div type="button" class="rounded-circle next" id="next1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left"
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                        </div>
+                        <div type="button" class="rounded-circle prev" id="prev1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-flex col-md-1"></div>
+            <div class="col-12 col-md-6 product-detail">
+                <ul class="categories mt-5 mt-md-0">
+                    <li>
+                        <a href="#">دست بندی</a>
+                    </li>
+                </ul>
+                <h1 class="title">دست بند هفت چاکرا</h1>
+                <p class="description">دستبند ۷ سنگ چاکرا برای تنظیم هر هفت
+                    چاکرا بدن استفاده می‌شود. از آنجایی که دارای هر
+                    ۷ سنگ چاکرا می‌باشد در نتیجه گزینه بسیار مناسب سنگ درمانی می‌باشد. موجودی این محصول بالاست، به همین
+                    دلیل
+                    ممکن است نمونه ارسال شده کمی در نقوش مهره‌ها و رنگ متفاوت باشد.</p>
+                <ul class="list-unstyled">
+                    <li class="d-inline ml-4">
+                        <a href="#" class="custom-link">
+                    <span class="icon">
+                        <svg width="1em"
+                             height="1em"
+                             viewBox="0 0 16 16"
+                             class="bi bi-grid-fill"
+                             fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+</svg>
+                    </span>
+                            <span class="text mr-2">جزئیات بیشتر</span>
+                        </a>
+                    </li>
+                    <li class="d-inline">
+                        <a href="#" class="custom-link">
+                    <span class="icon">
+                        <svg width="1em"
+                             height="1em"
+                             viewBox="0 0 16 16"
+                             class="bi bi-chat-dots-fill"
+                             fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg>
+                    </span>
+                            <span class="text mr-1 text-custom">نظرات کاربران</span>
+                        </a>
+                    </li>
+                    <li class="d-md-inline d-block mt-4 mt-md-0">
+                        <div class="d-inline mr-4">اشتراک گذاری:</div>
+                        <div class="d-inline"><a class="btn p-2 border-info mr-2 rounded-circle"></a></div>
+                        <div class="d-inline"><a class="btn p-2 border-info mr-2 rounded-circle"></a></div>
+                        <div class="d-inline"><a class="btn p-2 border-info mr-2 rounded-circle"></a></div>
+                        <div class="d-inline"><a class="btn p-2 border-info mr-2 rounded-circle"></a></div>
+
+                    </li>
+                </ul>
+                <div class="row justify-content-between tools">
+                    <div class="col d-none d-md-flex"></div>
+                    <div class="col text-center">
+                        <div class="icon"><img src="images/pic2.png" alt=""></div>
+                        <div class="text">ارسال رایگان</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="icon"><img src="images/Image%206.png" alt=""></div>
+                        <div class="text">مطابقت کالا با تصویر</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="icon"><img src="images/Image%207.png" alt=""></div>
+                        <div class="text">گارانتی تعویض</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="icon"><img src="images/Image%208.png" alt=""></div>
+                        <div class="text">فاکتور معتبر</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="icon"><img src="images/Image%209.png" alt=""></div>
+                        <div class="text">قیمت = ارزش واقعی</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-12  mb-3 mb-md-0">
+                        <div class="price d-inline font-weight-bold">۲۰۰ هزار تومان</div>
+                    </div>
+                    <div class="col-md-7 col-12">
+                        <form action="#" class="d-flex">
+                            <input class="form-control form-control-lg ml-3 w-25" type="number" value="1"/>
+                            <button type="submit" class="btn btn-lg btn-submit w-75">+ سفارش</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="suggestion-products" id="suggestion-products">
+    <div class="container">
+        <div class="row mb-3 mt-4">
+            <div class="col-12">
+                <div class="carousel-title d-inline-block">
+                <span class="icon"><svg width="20px" height="20px" viewBox="0 0 16 16" class=" bi bi-wallet-fill"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z"/>
+<path d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z"/>
+</svg></span>
+                    <span>محصولات مشابه</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="suggestion-container">
+                    <div class="suggestion" id="slik2">
+                        <a href="#" class="item">
+                            <img src="images/sample2.png" class="img">
+                            <label class="title">دست بند هفت چاکرا</label>
+                            <div class="price">۲۰۰ هزار تومان</div>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="images/sample2.png" class="img">
+                            <label class="title">دست بند هفت چاکرا</label>
+                            <div class="price">۲۰۰ هزار تومان</div>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="images/sample2.png" class="img">
+                            <label class="title">دست بند هفت چاکرا</label>
+                            <div class="price">300 هزار تومان</div>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="images/sample2.png" class="img">
+                            <label class="title">دست بند هفت چاکرا</label>
+                            <div class="price">400 هزار تومان</div>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="images/sample2.png" class="img">
+                            <label class="title">دست بند هفت چاکرا</label>
+                            <div class="price">500 هزار تومان</div>
+                        </a>
+                        <a href="#" class="item">
+                            <img src="images/sample2.png" class="img">
+                            <label class="title">دست بند هفت چاکرا</label>
+                            <div class="price">600 هزار تومان</div>
+                        </a>
+                    </div>
+                    <div class="slider-controller">
+                        <div type="button" class="rounded-circle next" id="next2">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left"
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                        </div>
+                        <div type="button" class="rounded-circle prev" id="prev2">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="products-description">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <span class="icon">
+                        <svg width="1em"
+                             height="1em"
+                             viewBox="0 0 16 16"
+                             class="bi bi-grid-fill"
+                             fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+</svg>
+                    </span>
+                    <span class="text">جزئیات محصول</span>
+                </div>
+
+                <div class="details">مطالب در مورد روایات عقیق از شماره 1 تا 17 برگرفته از کتاب حلیة المتقین از علامه
+                    محمد باقر بن محمد تقی مجلسی، چاپ هفتم/1390، صفحات 31 تا 33 می‌باشد: امام صادق (علیه السلام) فرمودند:
+                    دوست دارم هر مومنی پنج انگشتر در دست کند، عقیق بابت دفع فقر، فیروزه بابت گشایش کار، یاقوت بابت دفع
+                    پریشانی، حدید بابت غلبه بر دشمنان، درنجف بابت آسان شدن امور منقول است که حضرت امیر المؤمنین (علیه
+                    السلام) چهار انگشتر در دست می کردند، انگشتر یاقوت برای شرافت و زینتش، فیروزه برای نصرت و یاریش، حدید
+                    صینی برای قوتش و عقیق برای حرز و دفع دشمنان و بلاها. در حدیث صحیح از حضرت علی بن موسی الرضا (علیه
+                    السلام) مروی است که عقیق فقر و درویشی را برطرف می‌کند و در دست کردن عقیق، نفاق را زایل می‌کند. امام
+                    رضا (علیه السلام) فرمودند هرکه قرعه به انگشتر عقیق بزند، بهره او تمام تر بیرون می‌آید. در حدیث معتبر
+                    از امام جعفر صادق (علیه السلام) منقول است که انگشتر عقیق در دست کنید که مبارک است و هر که انگشتر
+                    عقیق در دست داشته باشد، امید است که عاقبش مقرون به خیر و نیکی باشد. از ربیعه الروای منقول است که در
+                    دست حضرت امام زین العابدین (علیه السلام) انگشتر عقیق دید، پرسید که این چه نگین است؟ فرمود که این
+                    عقیق رومی است و حضرت رسول (صلی الله علیه و آله و سلم) فرمود که هرکه انگشتر عقیق در دست داشته باشد،
+                    حاجتش برآورده می‌شود. از حضرت صادق (علیه السلام) منقول است که انگشتر عقیق مورث ایمنی است در سفر و در
+                    حدیث دیگر از آن حضرت منقول است که هرکه انگشتری بگیرد که نگینش عقیق باشد، پریشان نشود و عاقبت کارش
+                    البته نیکو باشد. و در حدیث دیگر وارد شده که حاکمی پی شخصی فرستاده بود به سبب جرمی، حضرت صادق (علیه
+                    السلام) فرمود که انگشتر عقیق به او برسانید چنان کردند، مکروهی به او نرسید. در حدیث دیگری از پیامبر
+                    منقول است که شخصی به نزد حضرت رسول (صلی الله علیه و آله و سلم) آمد و شکایت کرد که دزد در راه به من
+                    رسید و اموال مرا برد حضرت فرمود که چرا انگشتر عقیق در دست نمی کنید؟ مادام که آدمی آن انگشتر را با
+                    خود دارد اندوهی به او نمی رسد. در حدیث دیگر فرمود که انگشتر عقیق با خود دارید که آن اول کوهی است که
+                    اقرار کرده است از برای خدا به یگانگی و از برای من به پیغمبری و از برای تو یا علی به امامت. در حدیث
+                    معتبر از بشیر دهان منقول است که عرض کردم کدام یک از نگین ها بر انگشت خود بنشانم؟ رسول اکرم (صلی الله
+                    علیه و آله و سلم) فرمودند: چرا غافلی از عقیق سرخ و عقیق زرد و عقیق سفید که این ها سه کوهند در بهشت
+                    اما کوه عقیق سرخ پس مشرف است بر خانه رسول خدا (صلی الله علیه و آله و سلم) و اما کوه عقیق زرد پس مشرف
+                    است بر خانه حضرت فاطمه (س) و اما کوه عقیق سفید پس مشرف است بر خانه حضرت امیر المؤمنین (علیه السلام)
+                    و همه آن ها یک خانه است و از زیر هر کوهی نهری جاری است از برف سردتر، از شیر سفید تر، و نمی خورد از
+                    آن نهرها مگر آل محمد (صلی الله علیه و آله و سلم) و شیعیان ایشان و هر سه نهر از کوثر می آید و به یک
+                    جا می ریزد و این سه کوه تسبیح و تقدیس و تمجید الهی می کنند و از برای محبان آل محمد (صلی الله علیه و
+                    آله و سلم) طلب آمرزش می کنند. پس هر که از شیعیان آل محمد یکی از این عقیق ها را در دست داشته باشد، جز
+                    خیر و نیکی و فراخی روزی و سلامتی نبیند، از جمیع بلایا در امان باشد و ایمنی یابد از شر پادشاه ظالم و
+                    از هر چه آدمی از آن می ترسد و حذر می نماید. در حدیث دیگر منقول است که شخصی را از برابر امام محمد
+                    باقر (علیه السلام) گذرانیدند که تازیانه بسیار بر او زده بودند، حضرت فرمود انگشتر عقیق او کجاست؟ اگر
+                    با او می بود تازیانه نمی خورد. در روایت دیگر از حضرت صادق (علیه السلام) منقول است که دستی به سوی
+                    آسمان بلند نمی شود که خدا دوست تر دارد از دستی که در آن انگشتر عقیق بوده باشد. در حدیث معتبر از امام
+                    حسین (علیه السلام) منقول است که چون حضرت موسی (علیه السلام) بر کوه طور با حق تعالی مناجات کرد و بر
+                    زمین نظر کرد، حق تعالی از نور روی او عقیق را آفرید ، پس فرمود که قسم خوردم به ذات مقدس خود که دستی
+                    را به آتش جهنم عذاب نکنم که انگشتر عقیق در آن باشد، اگر ولایت علی بن ابیطالب (علیه السلام) داشته
+                    باشد. در حدیث دیگر منقول است که جبرئیل نازل شد بر حضرت رسول (صلی الله علیه و آله و سلم) و گفت یا
+                    محمد (صلی الله علیه و آله و سلم) پروردگارم سلامت می رساند و می فرماید انگشتر را به دست راست بکن و
+                    نگینش را از عقیق بکن و بگو به علی بن ابیطالب (علیه السلام) پسرعمت که انگشتر را به دست راست بکند و
+                    نگینش را عقیق بکند، حضرت امیر المؤمنین (علیه السلام) پرسید که یا رسول الله عقیق کدام است؟ فرمود که
+                    کوهی است در یمن که برای خدا اقرار کرده است به یگانگی و برای من به پیغمبری و برای تو و اولاد تو به
+                    امامت و برای شیعیان تو به بهشت و برای دشمنان تو به جهنم.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="user-opinion">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <span class="icon">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-dots-fill"
+                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg>
+                    </span>
+                    <span class="text">نظرات کاربران</span>
+                </div>
+                <div class="comments-container">
+                    <div class="comments" id="slik3">
+                        <div class="opinion">
+                            <div class="comment">
+                                <h3 class="name">shaparak214</h3>
+                                <div class="d-inline-block stars">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <p class="text">انرژی سنگها رو از روی عکس هم واقعا میشه دریافت کرد بیصبرانه منتظر رسیدن
+                                    سفارشم
+                                    هستم!
+                                    یکی برای خودم و یکی برای همسرم</p>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                            <div class="answer">
+                                <div class="text">به دلیل سلیقه بسیار خوبتون و دقت بالاتون به شما تبریک میگیم سعی کرده
+                                    ایم
+                                    بهترین دستبند ۷ سنگ چاکرا رو تولید کنیم ممنونیم ازتون
+                                </div>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                        </div>
+                        <div class="opinion">
+                            <div class="comment">
+                                <h3 class="name">monaaa6256</h3>
+                                <div class="d-inline-block stars">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <p class="text">خیلی قشنگن این زیورالات هفت چاکرا ❤</p>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                            <div class="answer">
+                                <div class="text">به دلیل سلیقه بسیار خوبتون و دقت بالاتون به شما تبریک میگیم سعی کرده
+                                    ایم
+                                    بهترین دستبند ۷ سنگ چاکرا رو تولید کنیم ممنونیم ازتون
+                                </div>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                        </div>
+                        <div class="opinion">
+                            <div class="comment">
+                                <h3 class="name">shaparak214</h3>
+                                <div class="d-inline-block stars">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <p class="text">انرژی سنگها رو از روی عکس هم واقعا میشه دریافت کرد بیصبرانه منتظر رسیدن
+                                    سفارشم
+                                    هستم!
+                                    یکی برای خودم و یکی برای همسرم</p>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                            <div class="answer">
+                                <div class="text">به دلیل سلیقه بسیار خوبتون و دقت بالاتون به شما تبریک میگیم سعی کرده
+                                    ایم
+                                    بهترین دستبند ۷ سنگ چاکرا رو تولید کنیم ممنونیم ازتون
+                                </div>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                        </div>
+                        <div class="opinion">
+                            <div class="comment">
+                                <h3 class="name">monaaa6256</h3>
+                                <div class="d-inline-block stars">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <p class="text">خیلی قشنگن این زیورالات هفت چاکرا ❤</p>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                            <div class="answer">
+                                <div class="text">به دلیل سلیقه بسیار خوبتون و دقت بالاتون به شما تبریک میگیم سعی کرده
+                                    ایم
+                                    بهترین دستبند ۷ سنگ چاکرا رو تولید کنیم ممنونیم ازتون
+                                </div>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                        </div>
+                        <div class="opinion">
+                            <div class="comment">
+                                <h3 class="name">مریم عباسی</h3>
+                                <div class="d-inline-block stars">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <p class="text">از نظر رنگ سنگها و ترتیب چینش خیلی عالی ساخته شده، انرژی تک تک سنگهاش از
+                                    عکس هم کاملا قابل لمسه چه برسه به اینکه دستمون باشه 😍</p>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                            <div class="answer">
+                                <div class="text">به دلیل سلیقه بسیار خوبتون و دقت بالاتون به شما تبریک میگیم سعی کرده
+                                    ایم
+                                    بهترین دستبند ۷ سنگ چاکرا رو تولید کنیم ممنونیم ازتون
+                                </div>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                        </div>
+                        <div class="opinion">
+                            <div class="comment">
+                                <h3 class="name">monaaa6256</h3>
+                                <div class="d-inline-block stars">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                         class="bi bi-star-fill mr-1 text-warning" fill="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </div>
+                                <p class="text">خیلی قشنگن این زیورالات هفت چاکرا ❤</p>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                            <div class="answer">
+                                <div class="text">به دلیل سلیقه بسیار خوبتون و دقت بالاتون به شما تبریک میگیم سعی کرده
+                                    ایم
+                                    بهترین دستبند ۷ سنگ چاکرا رو تولید کنیم ممنونیم ازتون
+                                </div>
+                                <div class="date">17 فروردین, 1398</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controller">
+                        <div type="button" class="rounded-circle next" id="next3">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left"
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                        </div>
+                        <div type="button" class="rounded-circle prev" id="prev3">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="opinion-input mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <span class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-quote-fill"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766c.087.124.163.26.227.401.428.948.393 2.377-.942 3.706a.446.446 0 0 1-.612.01.405.405 0 0 1-.011-.59c.419-.416.672-.831.809-1.22-.269.165-.588.26-.93.26C4.775 9.333 4 8.587 4 7.667 4 6.747 4.776 6 5.734 6c.271 0 .528.06.756.166l.008.004c.169.07.327.182.469.324.085.083.161.174.227.272zM11 9.073c-.269.165-.588.26-.93.26-.958 0-1.735-.746-1.735-1.666 0-.92.777-1.667 1.734-1.667.271 0 .528.06.756.166l.008.004c.17.07.327.182.469.324.085.083.161.174.227.272.087.124.164.26.228.401.428.948.392 2.377-.942 3.706a.446.446 0 0 1-.613.01.405.405 0 0 1-.011-.59c.42-.416.672-.831.81-1.22z"/>
+</svg></span>
+                    <span class="text">ارسال نظر</span>
+                </div>
+                <div class="send-comment">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-12 form-group">
+                                <label for="nameinput">نام و نام خانوادگی:</label>
+                                <input id="nameinput" class="form-control">
+                            </div>
+                            <div class="col-md-6 col-12 form-group">
+                                <label for="exampleInputEmail1">آدرس ایمیل:</label>
+                                <input type="email" placeholder="example@abc.com" class="form-control"
+                                       id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 form-group">
+                                <label>متن پیام</label>
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ارسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="frequently">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title font-weight-bold">معمولا با هم خریده شده اند</div>
+                <div class="description">با افزودن بسته کامل به سبد خرید ، پس انداز کنید</div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col">
+                <img class="picture" src="images/sample_product_3.png">
+                <div class="pluse">+</div>
+            </div>
+            <div class="col">
+                <img src="images/sample_product_4.png" class="picture">
+
+                <div class="pluse">+</div>
+            </div>
+            <div class="col">
+                <img src="images/sample_product_2(1).png" class="picture">
+                <div class="pluse">+</div>
+            </div>
+            <div class="col">
+                <img src="images/sample_product_2(2).png" class="picture">
+            </div>
+            <div class="col-4">
+                <div class="title-off font-weight-bold">قیمت همشون با هم</div>
+                <div class="price">
+                    <div class="off-price">729 تومن</div>
+                    <div class="price-muted text-muted">800 تومن</div>
+                </div>
+                <button class="btn btn-submit" type="button"> اضافه کردن به سبد خرید </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="list-group">
+                    <div class="list-group-item border-0">
+                        <form >
+                            <input class=" form-check-input" type="checkbox" id="check1">
+                            <label class="name" for="check1">
+                                <div class="item-name d-inline">دست بند دسته خر </div>
+                                <span>-</span>
+                                <div class="price d-inline">800</div>
+                                <div class="off-price text-muted d-inline">729</div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="list-group-item border-0">
+                        <form>
+                            <input class=" form-check-input" type="checkbox" id="check2">
+                            <label class="name" for="check2">
+                                <div class="item-name d-inline">دست بند 3 چاکت</div>
+                                <select class="form-control d-inline" style="width: auto!important;">
+                                    <option>Nuttella</option>
+                                    <option>Grey</option>
+                                    <option>Abbey</option>
+                                </select>
+                                <span>-</span>
+                                <div class="price d-inline">445</div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="list-group-item border-0">
+                        <form>
+                            <input class=" form-check-input" type="checkbox" id="check3">
+                            <label class="name" for="check3">
+                                <div class="item-name d-inline">دست بند 3 چاکت</div>
+                                <select class="form-control d-inline" style="width: auto!important;">
+                                    <option>Nuttella</option>
+                                    <option>Grey</option>
+                                    <option>Abbey</option>
+                                </select>
+                                <span>-</span>
+                                <div class="price d-inline">445</div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="list-group-item border-0">
+                        <form>
+                            <input class="form-check-input" type="checkbox" id="check4">
+                            <label class="name" for="check4">
+                                <div class="item-name d-inline">دست بند 3 چاکت</div>
+                                <select class="form-control d-inline" style="width: auto!important;">
+                                    <option>Nuttella</option>
+                                    <option>Grey</option>
+                                    <option>Abbey</option>
+                                </select>
+                                <span>-</span>
+                                <div class="price d-inline">445</div>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h1 class="title">آخوند</h1>
+                <div class="description">در مواردی که لازم باشد متن چند خطی به فرم اضافه شود، از دستور < TEXTAREA> استفاده میگردد. همانند متن یک خطی در دستور < INPUT> ، می توان اندازه فیلد چند خطی و مقدار پیش فرضی را برای متن چند خطی تعیین کرد. به عنوان مثال، برای تعیین تعداد سطرهای متن از صفت ROWS و برای تعیین تعداد ستونهای آن از صفت COLS استفاده می شود. بنابراین، برای تعیین یک ناحیه متنی با ۵ سطر و ۸۰ستون،</div>
+            </div>
+            <div class="col-md-2 col-12"></div>
+            <div class="col-md-2 col-12"></div>
+            <div class="col-md-2 col-12"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#slik').slick({
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 1,
+            rtl: true,
+            prevArrow: $('#prev1'),
+            nextArrow: $('#next1'),
+        })
+    });
+    $(document).ready(function () {
+        $('#slik2').slick({
+            infinite: true,
+            speed: 1000,
+            variableWidth: true,
+            slidesToShow: 5,
+            rtl: true,
+            prevArrow: $('#prev2'),
+            nextArrow: $('#next2'),
+        })
+    });
+    $(document).ready(function () {
+        $('#slik3').slick({
+            infinite: true,
+            speed: 1000,
+            rtl: true,
+            // variableWidth:true,
+            slidesToShow: 4,
+            prevArrow: $('#prev3'),
+            nextArrow: $('#next3'),
+            responsive: [{
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: false,
+                }
+            }]
+        })
+    });
+</script>
+</body>
+</html>
